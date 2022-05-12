@@ -35,8 +35,8 @@ def main():
     """
     temperature = get_temperature()
     try:
-        if temperature > ON_THRESHOLD:
-            GPIO.output(17, 1)  # Activate BCM17 and start the fan.
+        if temperature >= ON_THRESHOLD:
+            GPIO.output(17, 1)  # Activate BCM17 to start the fan.
             time.sleep(120)
     except (IndexError, TypeError, ValueError):
         raise RuntimeError("Could not check the temperature.")
