@@ -8,7 +8,7 @@ import time
 
 GPIO.setmode(GPIO.BCM)  # Make use of the BCM-notation.
 GPIO.setup(17, GPIO.OUT, initial=0)  # Initially, set BCM17 to output and off.
-ON_THRESHOLD = 50.0  # (degrees Celsius) Fan starts at or above this temperature.
+ON_THRESHOLD = 53.0  # (degrees Celsius) Fan starts at or above this temperature.
 
 
 def get_temperature():
