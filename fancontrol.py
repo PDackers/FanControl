@@ -3,7 +3,6 @@
 import re
 import RPi.GPIO as GPIO
 import subprocess
-import syslog
 import time
 
 GPIO.setmode(GPIO.BCM)  # Make use of the BCM-notation.
